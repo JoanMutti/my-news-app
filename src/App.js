@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Route } from 'wouter'
+import Home from './pages/Home'
+import Header from './components/Header'
+import searchResults from './pages/searchResults'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const keywords = ['criptocurrency', 'bussiness', 'tech']
+
+	return (
+		<div className='App'>
+			<section className='App-content'>
+				<Header keywords={keywords} />
+				<Route path='/' component={Home} />
+				<Route path='/search/:keyword' component={searchResults} />
+			</section>
+		</div>
+	)
 }
 
-export default App;
+export default App

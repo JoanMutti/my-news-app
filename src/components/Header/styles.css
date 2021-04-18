@@ -1,0 +1,47 @@
+.header-content h1 {
+	font-weight: 500;
+	width: fit-content;
+	background-color: #bb2020;
+	border-radius: 15px;
+	padding: 5px 15px 5px 15px;
+}
+
+.header-content em {
+	font-weight: bold;
+	color: #fff;
+	transition: 0.3s;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.header-content em:hover {
+	text-shadow: 2px 3px 4px rgba(0, 0, 0, 1);
+}
+
+.header-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 40px;
+	height: 150px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.keywords-list {
+	padding: 10px;
+}
+
+.keyword {
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px 15px 5px 15px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #fafafa;
+	background-color: #bb2020;
+}
+
+.keyword:hover {
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+}
