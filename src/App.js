@@ -5,7 +5,7 @@ import Header from './components/Header'
 import searchResults from './pages/searchResults'
 
 function App() {
-	const keywords = ['criptocurrency', 'bussiness', 'tech']
+	const keywords = ['Cryptocurrency', 'Business', 'Tech']
 
 	return (
 		<div className='App'>

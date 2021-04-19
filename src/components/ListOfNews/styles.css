@@ -4,6 +4,9 @@
 	justify-content: space-between;
 	grid-gap: 15px;
 	justify-content: center;
+	border-bottom: 3px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 @media (min-width: 700px) {

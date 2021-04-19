@@ -10,9 +10,10 @@ export function useNews({ keyword }) {
 		setLoading(true)
 
 		getNews({ keyword }).then((news) => {
-			setNews(deleteDuplicate({ news }))
+			const uniqueNews = deleteDuplicate({ news })
+			setNews(uniqueNews)
 			setLoading(false)
-			localStorage.setItem(`${keyword}`, JSON.stringify(news))
+			localStorage.setItem(`${keyword}`, JSON.stringify(uniqueNews))
 		})
 	}, [keyword])
 
